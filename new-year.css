@@ -1,0 +1,77 @@
+/* A small New Year's Eve in midnight blue, candlelight and pine. */
+:root {
+  --bg:#101724; --paper:#f3e8d6; --ink:#292433; --muted:#b5c1d3;
+  --rose:#efc486; --wine:#6e3e52; --line:#b8c6df29;
+}
+body {
+  background:
+    radial-gradient(ellipse at 85% 4%,#263950 0,transparent 25rem),
+    radial-gradient(ellipse at 8% 34%,#223943 0,transparent 43rem),
+    linear-gradient(180deg,#101724,#151e2c 58%,#101724);
+}
+.header{border-color:#f2cb8e33}.header .wordmark-note{color:#e3ccab}
+.hero{min-height:0;padding-block:80px 35px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:55px}
+.hero h1{font-size:clamp(55px,7vw,110px);line-height:.96;white-space:normal;margin:11px 0 26px;letter-spacing:-.055em}
+.hero h1 em{display:block}.hero-pre{font-size:clamp(24px,2.8vw,37px);line-height:1.1;margin:30px 0 5px}
+.hero-description{color:#d2dceb;line-height:1.85}
+.hero .primary,.ny-hint{background:#f1cc93;color:#242838}
+.hero .primary:hover,.ny-hint:hover{background:#ffe4b8}
+.hero-art{padding:18px 14px 35px;min-width:0}.hero-art:after{content:'BONNE ANNÉE';right:-6px;bottom:51px;transform:rotate(-8deg);background:#192639;border-color:#dcb886;color:#f2c991;font-size:9px;letter-spacing:1.8px}
+.ny-halo{position:absolute;inset:-8% -5%;background:radial-gradient(ellipse,#e9c78531,transparent 63%);z-index:-1;pointer-events:none;opacity:.6;transition:opacity .7s}
+.hero-art.is-lit .ny-halo{opacity:1;background:radial-gradient(ellipse,#f0c78465,transparent 70%)}
+.postcard{background:#efdfc4;transform:rotate(3deg);padding:11px 11px 0;box-shadow:0 22px 80px #0007}
+.postcard img{filter:none}
+.postcard figcaption{padding:10px 15px 12px}.postcard figcaption strong{font-size:26px}
+.stamp{background:#152034;z-index:2}.art-scribble{bottom:-14px}
+.ny-string{position:absolute;top:8px;left:7%;right:5%;height:47px;display:flex;justify-content:space-evenly;border-bottom:1px solid #acbcad9e;border-radius:50%;z-index:2;transform:rotate(3deg);pointer-events:none}
+.ny-string i{position:relative;top:calc(18px + 3.5px * min(var(--i), 8 - var(--i)));display:block;width:8px;height:13px;background:#b9ab805c;border-radius:8px 8px 12px 12px;border-top:3px solid #2c4941}
+.is-lit .ny-string i{background:#ffda8c;box-shadow:0 0 9px 2px #ffb740,0 0 28px 8px #ffba4666;animation:ny-glimmer 3s ease-in-out infinite alternate;animation-delay:calc(var(--i)*.2s)}
+.ny-light-note{padding:0 14px 15px}.ny-light-note button{background:#26374a;color:#ffe2a9;border:0;border-radius:4px;padding:8px 14px;min-height:44px;font-weight:600;font-size:11px}
+.ny-light-note button:hover{background:#345063}.ny-light-note p{font-family:var(--hand);font-size:clamp(18px,2vw,24px);line-height:1.2;margin:13px 0 7px;max-width:38ch;color:#51354c}
+.ny-light-note p:focus{outline:none}
+.snowflake{background:#d9ebff;box-shadow:0 0 8px #bfdaff70;opacity:.5}
+.ticker{background:#24364a;border-block-color:#e8c38e32;color:#f6e8d1}.ticker i{color:#e8c38e}
+.taste{background:#202f42;color:var(--paper);border-color:#b2c3dd33}.taste-night{background:#242942}.moon:after{background:#242942}.taste-italy{background:#273747}.taste-food{background:#303345}.taste-winter{background:#283a4b}.taste-cat{background:#324354}
+.taste .card-index,.taste-description{color:#cfdae8}.taste .card-open{color:#f1c88f}.cinema-strip{background:#233345;border-color:#bbcad83d}
+.math-section,.kinder-section{background:radial-gradient(ellipse at top,#293f4e,#192535 70%);border-block-color:#cabee42a}
+.formula-paper,.chat-paper,.kinder-game{background:#f1e5cf;box-shadow:7px 9px 0 #385367}
+.kinder-game:before{background:#c8aa77cc}.letter-section{background:radial-gradient(ellipse at top,#f5e7ce,#e9d5b7 85%);color:var(--ink)}
+.letter-section .wax-seal{background:#78384c}
+.ny-tree{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);background:#192637;position:relative;overflow:hidden;border:1px solid #cfba9340;border-radius:12px;align-items:center;margin:36px auto 70px}
+.ny-tree-copy{padding:45px 39px;z-index:2}.ny-tree-copy .eyebrow{color:#e2bd88}.ny-tree h2{font-size:clamp(45px,6vw,76px);margin:14px 0 24px}.ny-tree-copy p{font-size:13px;color:#cbd6e5;max-width:43ch;line-height:1.85}
+.ny-tallies{display:flex;gap:22px;margin:24px 0 16px}.ny-tallies>div{border-left:1px solid #e9c48a58;padding-left:13px}.ny-tallies b,.ny-tallies span{display:block}.ny-tallies b{font:500 34px/1 var(--serif);color:#fff0d9}.ny-tallies span{font-size:9px;color:#c2b9b1;margin-top:6px;letter-spacing:1px}
+.ny-tree-copy #ny-status{min-height:40px;font-size:11px;color:#e7c38d}
+.ny-hint,.ny-reset{display:inline-flex;align-items:center;min-height:44px;border-radius:4px;padding:9px 13px;border:0;font-size:11px}
+.ny-reset{background:transparent;color:#d7c69e;text-decoration:underline;text-underline-offset:4px}
+.ny-tree-stage{position:relative;display:grid;place-items:center;padding:15px 17px 23px;min-height:490px;overflow:hidden;background:radial-gradient(ellipse at 50% 63%,#213f44,#152538 70%);isolation:isolate}
+.ny-tree-stage:before{content:'';position:absolute;inset:0;z-index:-1;background-image:radial-gradient(circle,#f8e7bd 1px,transparent 1.6px),radial-gradient(circle,#d0ecff 1px,transparent 1.6px);background-size:83px 91px,121px 107px;background-position:12px 9px,30px 44px;opacity:.35}
+.ny-tree-stage:after{content:'';position:absolute;left:-5%;right:-5%;bottom:-49px;height:115px;border-radius:50%;background:#dbe4ef16;z-index:-1}
+.ny-tree-sky{position:absolute;left:12%;top:19%;font-size:30px;color:#ecc693;line-height:1.5;opacity:.75;pointer-events:none}
+.ny-fir{position:relative;width:min(350px,87%);aspect-ratio:300/365;margin-bottom:12px}
+.ny-tree-art{display:block;width:100%;height:100%}.ny-tree-chain{opacity:.55;transition:opacity .65s}
+.ny-branch{position:absolute;top:var(--y);left:var(--x);transform:translate(-50%,-50%);width:46px;height:46px;display:grid;place-items:center;border-radius:50%;border:1px dashed #b4cdb57f;background:#1b3b3c;color:#a3b6ac;font-size:22px;line-height:1;padding:0}
+.ny-branch[data-state="0"] span{opacity:.32}.ny-branch[data-state="1"]{border-color:var(--jewel);color:var(--jewel);box-shadow:0 0 16px #edc88c40}.ny-branch[data-state="1"]:hover{transform:translate(-50%,-53%) scale(1.08)}
+.ny-branch[data-state="2"]{border-style:solid;border-color:#fff3d095;color:#232d37;background:var(--jewel);box-shadow:0 0 19px #f6d79875}
+.ny-branch[data-state="2"] span{animation:ny-pop .45s ease both}
+.ny-presents{position:absolute;bottom:39px;right:15%;display:flex;gap:8px;align-items:end;pointer-events:none}.ny-presents span{display:grid;place-items:center;height:35px;width:45px;background:linear-gradient(90deg,#79566d 42%,#e5c29a 42%,#e5c29a 58%,#79566d 58%);color:#492e4b;border-radius:3px;box-shadow:0 3px 12px #0005;font-size:17px}.ny-presents span+span{height:50px;width:51px;background:linear-gradient(90deg,#9c6c48 42%,#edd0a4 42%,#edd0a4 58%,#9c6c48 58%)}
+.is-decorated .ny-tree-chain{opacity:1;filter:drop-shadow(0 0 6px #ffc566)}.is-decorated .ny-presents{filter:drop-shadow(0 0 12px #ffcd8799)}.is-decorated .ny-tree-stage{background:radial-gradient(ellipse at center,#3c594a,#152538 75%)}
+.ny-find{display:flex;justify-content:flex-end;align-items:center;gap:13px;flex-wrap:wrap;width:min(1200px,calc(100% - 40px));margin:0 auto 20px}.wrap>.ny-find{width:100%}
+.ny-pick{border:1px dashed #b4c5db77;color:#f0e5d7;border-radius:30px;background:#223044;display:flex;align-items:center;gap:10px;padding:5px 15px;min-height:44px}
+.ny-pick span{font-size:23px;color:var(--jewel);text-shadow:0 0 8px #dea77590}.ny-pick b{font-size:10px;font-weight:600}.ny-pick:not(:disabled):hover{background:#34465d}.ny-pick:disabled{opacity:.82}.ny-find a{font-size:11px;color:var(--rose);padding:10px 5px;text-decoration:underline;text-underline-offset:4px}.letter-section .ny-find a{color:#632d49}
+.ny-archive{margin:39px auto 52px;border:1px solid #bfc2db2a;border-radius:7px}.ny-archive summary{padding:17px 21px;color:#f0dfca;cursor:pointer;font-size:14px}.ny-archive summary span:first-child{font-size:9px;color:#bdacbf;letter-spacing:1px;margin:0 10px}.ny-archive summary span:last-child{float:right;color:var(--rose)}
+.ny-archive .haunt-hub{width:calc(100% - 36px);margin:18px auto 30px}.ny-archive .ghost-section{width:calc(100% - 36px);padding-bottom:19px}
+body:not(:has(#halloween-archive[open])) .haunt-find{display:none}.ny-gift-dialog{background:#f5e6cb}
+.new-year [hidden]{display:none!important}
+@keyframes ny-glimmer{to{filter:brightness(.74)}}@keyframes ny-pop{from{scale:.65}to{scale:1}}
+@media(max-width:920px){.hero{gap:32px}.ny-tree-copy{padding-inline:30px}.ny-tree-stage{min-height:420px}}
+@media(max-width:760px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:22px;padding-top:41px}
+  .hero h1{font-size:clamp(65px,15vw,98px);margin-bottom:24px}
+  .hero-art{width:min(455px,94%);margin-top:16px;padding:15px 8px 24px}
+  .postcard figcaption strong{font-size:23px}.hero-art:after{right:-7px;bottom:37px;font-size:7px;padding:6px 9px}.ny-string{top:5px}
+  .ny-tree{grid-template-columns:minmax(0,1fr);margin:20px auto 50px}.ny-tree-copy{padding:27px 22px 20px}.ny-tree h2{font-size:52px;margin:12px 0 17px}.ny-tree-copy p{font-size:12px}.ny-tree-stage{min-height:0;padding-block:16px 12px}.ny-fir{width:min(310px,88%)}.ny-presents{bottom:23px;right:12%}.ny-branch{width:44px;height:44px}.ny-tree-sky{font-size:25px}
+  .ny-archive summary{padding:14px 11px;font-size:12px}.ny-archive summary span:first-child{margin:0 5px;font-size:7px}.ny-find{margin-bottom:16px}
+}
+@media(prefers-reduced-motion:reduce){.ny-string i,.ny-branch span{animation:none}}
+.snow-off .ny-string i{animation-play-state:paused}
+.hero h1 .hand-heart{display:none}
